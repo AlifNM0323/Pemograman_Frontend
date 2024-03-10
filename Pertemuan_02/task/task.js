@@ -22,7 +22,7 @@ console.log(users);
  * Note: Ubah function menggunakan arrow function.
  */
 const all = () => {
-  users.forEach(user => {
+  users.foreach(user => {
     console.log(`Name: ${user.name}, Age: ${user.age}, Major: ${user.major}`);
   });
 };
