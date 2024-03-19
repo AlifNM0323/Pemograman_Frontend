@@ -20,27 +20,11 @@ import users from '../models/users.js';
  * - Gunakan method map untuk format user.
  * - Gunakan promise untuk handle asynchronous.
  */
-// const formatUser = (title) => {
-//     return new Promise((resolve, reject) => {
-//       setTimeout(() => {
-//         const formattedUsers = users.map((user) => {
-//           return {
-//             name: title + ' ' + user.name, // Menggunakan operator + untuk menggabungkan string
-//             age: user.age,
-//             major: user.major
-//           };
-//         });
-//         resolve(formattedUsers);
-//       }, 3000); // Menunggu 3 detik sebelum mengembalikan hasil
-//     });
-//   };
-  
-//   module.exports = formatUser;
 
 const formatUser = (title) => {
   return new Promise((resolve, reject) => {
       setTimeout(() => {
-          // Sample data users
+          
           const users = [
             {
               name: "Aufa",
@@ -69,17 +53,17 @@ const formatUser = (title) => {
             },
           ];
 
-          // Format user names
+          
           const formattedUsers = users.map((user) => {
               return {
-                name: title + ' ' + user.name, // Menggunakan operator + untuk menggabungkan string
+                name: title + ' ' + user.name,
                 age: user.age,
                 major: user.major
               };
           });
 
           resolve(formattedUsers);
-      }, 3000); // Wait for 3 seconds before returning the result
+      }, 3000); 
   });
 };
 
@@ -92,11 +76,7 @@ const formatUser = (title) => {
  * - Gunakan method find untuk mencari 1 user.
  * - Gunakan promise untuk handle asynchronous.
  */
-// const findByName = (name) => {};
-// UserController.js
 
-
-// Definisikan fungsi findByName
 const findByName = (name) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -110,7 +90,7 @@ const findByName = (name) => {
   });
 };
 
-// export { findByName };
+
 
 
 /**
@@ -127,7 +107,7 @@ const findByName = (name) => {
  * - Gunakan method filter untuk mencari semua user.
  * - Gunakan promise untuk handle asynchronous.
  */
-// const filterByMajor = (major) => {};
+
 const filterByMajor = (major) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -141,7 +121,7 @@ const filterByMajor = (major) => {
   });
 };
 
-
+ 
 
 /**
  * TODO 6.
